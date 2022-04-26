@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+}
+.container{
+    margin: 0 auto;
+    padding: 30px 40px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    overflow: hidden;
+    max-width: 550px;
+    border-radius: 12px;
+    
+}
+.item-1{
+    margin: 0 auto;
+    box-shadow: 0px 0px 14px 1px #00000024;
+    margin-bottom: 0;
+    background-color: #fff;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.item-1 h2{
+    color: #2271ff;
+}
+.item-1 h4{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #2291ff;
+}.item-1 p{
+    font-weight: lighter;
+    line-height: 19px;
+    color: grey;
+}
+.item-2{
+    margin: 0   auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #2271ff;
+    padding: 25px;
+box-shadow: 0px 0px 14px 1px #00000024;
+}
+.item-2 h4{
+    color: #fff;
+    margin-top: 10px;
+}
+.item-2 .btn{
+    margin: 0 auto;
+    margin-top: 12px;
+    text-decoration: none;
+    padding: 9px;
+    background-color:rgb(50,230,45);
+    text-align: center;
+    width: 150px;
+    color: #fff;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+.item-2 h3{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 25px;
+}
+.item-2 span{
+    font-size: 13px;
+    font-weight: lighter;
+}
+.item-2 p{
+    color: #fff;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+.item-3{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #2291ff;
+    
+    box-shadow: 0px 0px 14px 1px #00000024;
+    margin: 0 auto;
+}
+.item-3 h3{
+    color: #fff;
+    font-weight: lighter;
+    font-size: 24px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.item-3 p{
+    color: whitesmoke;
+    line-height: 19px;
+    font-weight: lighter;
+    margin-top:0;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+
+ @media(min-width:1024px){
+    .container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    
+    }
+    .item-1{
+        
+        grid-area: 1/ 1/ 2/3 ;
+    }
+} 
+@media(max-width:567px){
+    .item-1{
+        width: 300px;
+    }
+    .item-2{
+        width: 300px;
+    }
+    .item-3{
+        width: 300px;
+    }
+}
+@media(max-width:768px) {
+    .item-1 {
+        width: 300px;
+    }
+
+    .item-2 {
+        width: 300px;
+    }
+
+    .item-3 {
+        width: 300px;
+    }
+}
+
+@media(max-width:992px) {
+    .item-1 {
+        width: 300px;
+    }
+
+    .item-2 {
+        width: 300px;
+    }
+
+    .item-3 {
+        width: 300px;
+    }
+}
